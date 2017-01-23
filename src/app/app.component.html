@@ -1,0 +1,10 @@
+<nav *ngIf="showNav">
+
+  <a routerLink="personals">personals</a>
+  <a routerLink="">home</a>
+</nav>
+<nav *ngIf="hideNav">
+  <a routerLink="personals" (click)="showNavNow();">Personals</a>
+</nav>
+
+<router-outlet></router-outlet>
